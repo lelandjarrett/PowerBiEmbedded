@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "BlobStorage.Data/1.0.0": {
+        "dependencies": {
+          "BlobStorage.Core": "1.0.0"
+        },
+        "runtime": {
+          "BlobStorage.Data.dll": {}
+        }
+      },
+      "BlobStorage.Core/1.0.0": {
+        "runtime": {
+          "BlobStorage.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BlobStorage.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BlobStorage.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
