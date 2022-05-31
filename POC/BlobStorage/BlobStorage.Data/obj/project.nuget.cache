@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EX5qMMT0urh2RgBfkh8zLIQxU45OgvIPycDH2jNTst4GLYn7anqQokXU+7k3dUQ4d48aaJAOoqdijcGnQ0uOpA==",
+  "dgSpecHash": "dTlYM+gPJUY5Bdk330eLYRPVogRzgu4tEDCFXh9/+rp8aq/uRHdBzsO660stUsnDsTBOSMrscaAHWkjRigPZ0g==",
   "success": true,
-  "projectFilePath": "A:\\GIT\\POC\\BlobStorage\\BlobStorage.Data\\BlobStorage.Data.csproj",
+  "projectFilePath": "C:\\Git\\PowerBiEmbedded\\POC\\BlobStorage\\BlobStorage.Data\\BlobStorage.Data.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

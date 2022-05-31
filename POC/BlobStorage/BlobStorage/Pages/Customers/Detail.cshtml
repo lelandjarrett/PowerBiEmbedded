@@ -33,6 +33,15 @@
                     <i class="fa-solid fa-eye"></i>
                 </a>
             </td>
+             <td>
+                <a class="btn btn-lg"
+                    asp-page="./EditImage" 
+                    asp-route-customerImageId="@Image.ID">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </a>
+            </td>
         </tr>
     }
 </table>
+
+<a asp-page="./EditImage" asp-route-customerId=@Model.Customer.ID class="btn btn-primary"> Add New</a>

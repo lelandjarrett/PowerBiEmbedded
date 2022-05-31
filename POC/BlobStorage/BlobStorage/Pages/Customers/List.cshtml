@@ -30,11 +30,21 @@
             <td>
                 <a class="btn btn-lg"
                     asp-page="./Detail" 
-                    asp-route-customerId="@customer.ID"
-                >
+                    asp-route-customerId="@customer.ID">
                     <i class="fa-solid fa-circle-info"></i>
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-lg"
+                    asp-page="./Edit" 
+                    asp-route-customerId="@customer.ID">
+                    <i class="fa-solid fa-pen-to-square"></i>
                 </a>
             </td>
         </tr>
     }
 </table>
+
+
+
+<a asp-page="./Edit" class="btn btn-primary"> Add New</a>

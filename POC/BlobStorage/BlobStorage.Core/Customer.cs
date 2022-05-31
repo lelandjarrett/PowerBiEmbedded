@@ -1,6 +1,8 @@
-﻿namespace BlobStorage.Core
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BlobStorage.Core
 {
-    public class Customer
+    public class Customer 
     {
         public int ID { get; set; }
         public string Name { get; set; }

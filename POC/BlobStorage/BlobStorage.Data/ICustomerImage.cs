@@ -10,7 +10,11 @@ namespace BlobStorage.Data
     public interface ICustomerImage
     {
         IEnumerable<CustomerImages> GetImagesById(int id);
+        CustomerImages GetImageID(int id);
         //CustomerImages GetById(int customerid);
+        CustomerImages Update(CustomerImages updatedCustomerImage);
+        int Commit();
+
     }
 
     public class InMemoryCustomerImage : ICustomerImage
@@ -27,6 +31,28 @@ namespace BlobStorage.Data
                 new CustomerImages{ ID = 5, CustomerID = 2, FileName = "BullDozer" },
                 new CustomerImages{ ID = 6, CustomerID = 3, FileName = "Mower" }
             };
+        }
+
+        public CustomerImages GetImageID(int id)
+        {
+            return customerImages.SingleOrDefault(r => r.ID == id);
+        }
+
+
+        public CustomerImages Update(CustomerImages updatedCustomerImage)
+        {
+            var customerImage = customerImages.SingleOrDefault(r => r.ID == updatedCustomerImage.ID);
+            if (customerImage != null)
+            {
+                customerImage.FileName = updatedCustomerImage.FileName;
+                customerImage.CustomerID = updatedCustomerImage.CustomerID;
+            }
+            return customerImage;
+        }
+
+        public int Commit()
+        {
+            return 0;
         }
 
 

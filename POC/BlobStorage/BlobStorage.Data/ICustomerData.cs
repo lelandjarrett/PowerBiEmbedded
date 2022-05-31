@@ -11,6 +11,8 @@ namespace BlobStorage.Data
     {
         IEnumerable<Customer> GetCustomersByName(string name);
         Customer GetById(int id);
+        Customer Update(Customer updatedCustomer);
+        int Commit();
     }
 
     public class InMemoryCustomerData : ICustomerData
@@ -35,6 +37,22 @@ namespace BlobStorage.Data
         }
 
    
+        public Customer Update(Customer updatedCustomer)
+        {
+            var customer = customers.SingleOrDefault(r => r.ID == updatedCustomer.ID);
+            if(customer !=null)
+            {
+                customer.Name = updatedCustomer.Name;
+                customer.Location = updatedCustomer.Location;
+                customer.BussineType = updatedCustomer.BussineType;
+            }
+            return customer;
+        }
+
+        public int Commit()
+        {
+            return 0;
+        }
 
         public IEnumerable<Customer> GetCustomersByName(string name = null)
         {
