@@ -162,9 +162,9 @@ namespace AppOwnsData.Services
 
                 targetWorkspaces: targetWorkspaceId != Guid.Empty ? new List<GenerateTokenRequestV2TargetWorkspace>() { new GenerateTokenRequestV2TargetWorkspace(targetWorkspaceId) } : null,
 
-                identities: new List<EffectiveIdentity>() { new EffectiveIdentity("Terry@lelanddiy.onmicrosoft.com",
+                identities: new List<EffectiveIdentity>() { new EffectiveIdentity("AARONFREY@macallister.com",
                     datasetIds.Select(datasetId => datasetId.ToString()).ToList(),
-                    new List<string>{ "Users"}) }
+                    new List<string>{ "AccountRLS"}) }
             );
 
             // Generate Embed token
